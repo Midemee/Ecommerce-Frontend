@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.delete-button {
+    background-color: #b00020;
+}
+
+#productResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+#productResult p {
+    margin: 8px 0;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+}
+
+
+.inventory-header {
+    width: 100%;
+    padding: 18px 5%;
+    background: #2b1712;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inventory-logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.inventory-logo span {
+    color: #c84620;
+}
+
+.inventory-header p {
+    margin-top: 4px;
+    color: #e9dcd6;
+}
+
+.inventory-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.inventory-user button,
+.products-heading button {
+    background: #c84620;
+}
+
+.inventory-welcome {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.inventory-welcome h1 {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.inventory-eyebrow {
+    margin-bottom: 8px;
+    color: #c84620;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.signed-in-storekeeper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 14px 18px;
+}
+
+.inventory-message {
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    background: #fff7f3;
+    border: 1px solid #e5c5b9;
+}
+
+.products-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.products-heading h2 {
+    margin-bottom: 0;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+button:disabled {
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+    .inventory-header,
+    .inventory-welcome,
+    .inventory-user {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inventory-user {
+        gap: 10px;
+    }
+}
